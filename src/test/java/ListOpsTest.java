@@ -102,13 +102,12 @@ public class ListOpsTest {
         );
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void testSizeOfEmptyList() {
         assertEquals(0, ListOps.size(Collections.emptyList()));
     }
 
-    @Ignore("Remove to run test")
+
     @Test
     public void testSizeOfNonEmptyList() {
         assertEquals(4, ListOps.size(Arrays.asList("one", "two", "three", "four")));

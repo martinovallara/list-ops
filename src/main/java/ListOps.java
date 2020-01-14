@@ -25,7 +25,7 @@ class ListOps {
     }
 
     static <T> int size(List<T> list) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return list.size();
     }
 
     static <T, U> List<U> map(List<T> list, Function<T, U> transform) {
