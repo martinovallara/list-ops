@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 class ListOps {
 
@@ -20,7 +21,7 @@ class ListOps {
     }
 
     static <T> List<T> filter(List<T> list, Predicate<T> predicate) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return list.stream().filter(predicate).collect(Collectors.toList());
     }
 
     static <T> int size(List<T> list) {

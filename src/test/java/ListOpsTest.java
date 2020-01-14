@@ -56,7 +56,6 @@ public class ListOpsTest {
         );
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void testConcatListOfNestedLists() {
         List<List<List<Character>>> listOfNestedLists = Arrays.asList(
@@ -87,7 +86,6 @@ public class ListOpsTest {
         );
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void testFilteringEmptyList() {
         assertEquals(
@@ -96,7 +94,6 @@ public class ListOpsTest {
         );
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void testFilteringNonEmptyList() {
         assertEquals(
