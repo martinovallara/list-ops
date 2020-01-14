@@ -25,7 +25,6 @@ public class ListOpsTest {
         );
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void testAppendingNonEmptyLists() {
         assertEquals(
@@ -34,7 +33,6 @@ public class ListOpsTest {
         );
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void testConcatEmptyList() {
         assertEquals(
@@ -43,7 +41,6 @@ public class ListOpsTest {
         );
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void testConcatListOfLists() {
         List<List<Character>> listOfLists = Arrays.asList(

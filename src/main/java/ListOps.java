@@ -14,7 +14,9 @@ class ListOps {
     }
 
     static <T> List<T> concat(List<List<T>> listOfLists) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        List<T> result = new ArrayList();
+        listOfLists.forEach(x -> result.addAll(x));
+        return result;
     }
 
     static <T> List<T> filter(List<T> list, Predicate<T> predicate) {
