@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.function.BiFunction;
@@ -7,7 +8,9 @@ import java.util.function.Predicate;
 class ListOps {
 
     static <T> List<T> append(List<T> list1, List<T> list2) {
-        return Collections.emptyList();
+        ArrayList list1AsArrayList = new ArrayList(list1);
+        list1AsArrayList.addAll(list2);
+        return list1AsArrayList;
     }
 
     static <T> List<T> concat(List<List<T>> listOfLists) {

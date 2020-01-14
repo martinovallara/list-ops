@@ -17,7 +17,6 @@ public class ListOpsTest {
         );
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void testAppendingListToEmptyList() {
         assertEquals(
